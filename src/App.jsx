@@ -15,6 +15,12 @@ const shuffleQuestionsArray = (array) => {
 
 let math = [
   {
+    question: 'The circles whose equations are `x^2 + y^2 + c^2 = 2ax` and `x^2 + y^2 + c^2 - 2by = 0` will touch one another externally if',
+    options: ['`1/b^2 + 1/c^2 = 1/a^2`', '`1/c^2 + 1/a^2 = 1/b^2`', '`1/a^2 + 1/b^2 = 1/c^2`', 'None'],
+    correctAnswer: '1/a^2 + 1/b^2 = 1/c^2',
+  },
+
+  {
     // id: 1,
     question:
       "The number of solutions of the equation `sin x + sin 5x = sin 3x` lying in the interval `[0, pi]` is",
@@ -77,7 +83,7 @@ function App() {
               <li >{questions.question}</li>
               <ol type="a">
                 {questions.options.map((option, optionIndex) => (
-                  <li key={optionIndex} className="flex align-center gap-1">
+                  <li key={optionIndex} className="flex align-center gap-1 mb1">
                     <input
                       type="radio"
                       name={`${questions.question.substring(0, 10)} ${questions.options[0]}`}
