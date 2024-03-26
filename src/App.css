@@ -732,6 +732,11 @@ img {
 .flex {
   display: flex;
 }
+
+.gap-3 {
+  gap: 3rem;
+}
+
 .inline-flex {
   display: inline-flex;
 }
