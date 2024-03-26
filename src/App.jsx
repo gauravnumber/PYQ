@@ -77,7 +77,7 @@ function App() {
               <li >{questions.question}</li>
               <ol type="a">
                 {questions.options.map((option, optionIndex) => (
-                  <li key={optionIndex}>
+                  <li key={optionIndex} className="flex align-center gap-1">
                     <input
                       type="radio"
                       name={`${questions.question.substring(0, 10)} ${questions.options[0]}`}
