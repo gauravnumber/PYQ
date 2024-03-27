@@ -17,7 +17,7 @@ let math = [
   {
     question: 'The circles whose equations are `x^2 + y^2 + c^2 = 2ax` and `x^2 + y^2 + c^2 - 2by = 0` will touch one another externally if',
     options: ['`1/b^2 + 1/c^2 = 1/a^2`', '`1/c^2 + 1/a^2 = 1/b^2`', '`1/a^2 + 1/b^2 = 1/c^2`', 'None'],
-    correctAnswer: '1/a^2 + 1/b^2 = 1/c^2',
+    correctAnswer: '`1/a^2 + 1/b^2 = 1/c^2`',
   },
 
   {
@@ -79,11 +79,11 @@ function App() {
       <div>
         <ol >
           {shuffledQuestions.map((questions, questionIndex) => (
-            <div className="mb4" key={questionIndex}>
+            <div className="mb4 " key={questionIndex}>
               <li >{questions.question}</li>
-              <ol type="a">
+              <ol type="a" className="pa0 mt1 flex flex-wrap   gap-2">
                 {questions.options.map((option, optionIndex) => (
-                  <li key={optionIndex} className="flex align-center gap-1 mb1">
+                  <li key={optionIndex} className="flex items-center gap-1 mb1">
                     <input
                       type="radio"
                       name={`${questions.question.substring(0, 10)} ${questions.options[0]}`}
