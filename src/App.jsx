@@ -15,6 +15,36 @@ const shuffleQuestionsArray = (array) => {
 
 let math = [
   {
+    question: 'The value of `cot(cosec^-1 5/3 + tan^(-1) (2/3))` is',
+    options: ['6/17', '3/17', '4/17', '5/17'],
+    correctAnswer: '6/17',
+  },
+
+  {
+    question: 'Let `alpha, beta` be the roots of the equation `x^2 - px + r = 0` and `alpha/2, 2 beta` be the roots of the equation `x^2 - qx + r = 0`. Then, the value of r is',
+    options: ['`2/9(p - q)(2q - p)`', '`2/9(q - p)(2q - p)`', '`2/9(q - 2p)(2q - p)`', '`2/9(2p - q)(2q - p)`'],
+    correctAnswer: '`2/9(2p - q)(2q - p)`',
+  },
+
+  {
+    question: 'The coefficient of `x^n` in the expansion of `(1 - 2x + 3x^2 - 4x^3 + ... to oo)^-n` is',
+    options: ['`((2n)!)/(n!(n - 1)!)`', '`((2n)!)/[(n - 1)!]^2`', '`((2n)!)/(n!)^2`', 'None'],
+    correctAnswer: '`((2n)!)/(n!)^2`',
+  },
+
+  {
+    question: 'If a, b, c are the roots of the equation `x^3 - 3x^2 + 3x + 7 = 0` `|[2bc - a^2, c^2, b^2], [c^2, 2ac - b^2, a^2], [b^2, a^2, 2ab - c^2]|` is',
+    options: ['9', '27', '81', '0'],
+    correctAnswer: '0',
+  },
+
+  {
+    question: 'If `a_1, a_2, a_3, ..., a_n` are positive real numbers whose product is a fixed number C, then the minimum value of `a_1 + a_2 + ... + 2a_n` is',
+    options: ['`n(2C)^(1/n)`', '`(n + 1)C^(1/n)`', '`2nC^(1/n)`', '`(n + 1)(2C)^(1/n)`'],
+    correctAnswer: '`n(2C)^(1/n)`',
+  },
+
+  {
     question: 'If A and B are two events and `P (A uu B)` = 5/6, `P(A nn B)` = 1/3, P(B) = 1/2, then A and B are two events which are',
     options: ['Dependent', 'Independent', 'Mutually exclusive', 'Equally likely'],
     correctAnswer: 'Independent',
@@ -41,7 +71,7 @@ let math = [
   {
     question: 'If a, b and c are unit vectors, then `|a - b|^2 + |b - c|^2 + |c - a|^2` does not exceed',
     options: ['4', '9', '8', '6'],
-    correctAnswer: '6',
+    correctAnswer: '9',
   },
 
   {
@@ -89,7 +119,7 @@ let math = [
 
   {
     question:
-      "A student council has 10 members. From this one President, one Vice-President, one Secretary, one JointSecretary and two Executive Committe members have to be elected. In how many ways this can be done ?",
+      "A student council has 10 members. From this one President, one Vice-President, one Secretary, one Joint-Secretary and two Executive Committe members have to be elected. In how many ways this can be done ?",
     options: ["151200", "75600", "37800", "18900"],
     correctAnswer: "75600",
   },
